@@ -1,0 +1,216 @@
+<title>한이음의 약속</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+
+  :root{
+    --paper:#FBF3D9;
+    --ink:#1C1806;
+    --muted:#6B6142;
+    --line:#E8DCA8;
+    --gold:#F4C400;
+    --gold-deep:#B8900A;
+    --card:#FFFDF3;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#171407;
+      --ink:#F7F0D6;
+      --muted:#C9BC8C;
+      --line:#3A331A;
+      --gold:#F4C400;
+      --gold-deep:#F7D74A;
+      --card:#211C0C;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#171407;
+    --ink:#F7F0D6;
+    --muted:#C9BC8C;
+    --line:#3A331A;
+    --gold:#F4C400;
+    --gold-deep:#F7D74A;
+    --card:#211C0C;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Noto Sans KR","Apple SD Gothic Neo",sans-serif;
+    line-height:1.65;
+    padding-inline:16px;
+  }
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding-block:44px 64px;
+  }
+
+  header.top{margin-bottom:36px;}
+  .eyebrow{
+    display:inline-block;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.04em;
+    color:var(--gold-deep);
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:5px 14px;
+    margin-bottom:16px;
+  }
+  h1{
+    font-family:"Black Han Sans","Noto Sans KR",sans-serif;
+    font-weight:400;
+    font-size:clamp(36px,8vw,58px);
+    line-height:1.1;
+    margin:0 0 14px;
+    text-wrap:balance;
+    color:var(--ink);
+  }
+  h1 span{color:var(--gold);}
+  .lede{
+    font-size:15.5px;
+    color:var(--muted);
+    max-width:56ch;
+  }
+
+  section.category{margin-bottom:40px;}
+  .category-head{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:18px;
+  }
+  .category-head .num{
+    flex:none;
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:var(--gold);
+    color:#1C1806;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:"Black Han Sans",sans-serif;
+    font-size:22px;
+  }
+  .category-head .name{
+    font-size:22px;
+    font-weight:900;
+  }
+
+  .policy{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:20px 22px;
+    margin-bottom:14px;
+  }
+  .policy h3{
+    margin:0 0 10px;
+    font-size:17px;
+    font-weight:700;
+    line-height:1.4;
+  }
+  .policy p{
+    margin:0;
+    font-size:14.5px;
+    color:var(--muted);
+  }
+
+  footer{
+    margin-top:40px;
+    padding-top:22px;
+    border-top:1px solid var(--line);
+    font-size:13px;
+    color:var(--muted);
+  }
+  footer strong{color:var(--ink);}
+</style>
+
+<div class="wrap">
+
+  <header class="top">
+    <span class="eyebrow">이음당 · 서울특별시장 후보 한이음</span>
+    <h1>같이 잇자, <span>서울!</span></h1>
+    <p class="lede">공보물에 담지 못한 이야기를 여기서 이어갑니다. 부동산·환경에너지·교육·청년, 네 영역의 공약이 각각 무엇을 바꾸려는 것인지 설명합니다.</p>
+  </header>
+
+  <section class="category">
+    <div class="category-head"><span class="num">1</span><span class="name">부동산 — 집은 상품이 아니라 권리입니다</span></div>
+
+    <div class="policy">
+      <h3>공공임대주택 20%, 매년 5만 호 확대</h3>
+      <p>집을 시장에만 맡기면 가격은 오르고 거주는 불안해집니다. 서울시가 직접 주택을 짓고 소유하는 공공임대를 매년 5만 호씩 늘려, 전체 주택 중 공공이 책임지는 비율을 20%까지 끌어올리겠습니다. 공급이 늘어날수록 민간 임대료도 함께 안정됩니다.</p>
+    </div>
+
+    <div class="policy">
+      <h3>청년 무상주택, 세입자 계속 거주권 보장</h3>
+      <p>사회에 첫발을 딛는 청년에게 보증금과 월세는 가장 큰 장벽입니다. 청년에게는 무상으로 주택을 제공하고, 계약 기간이 끝났다는 이유만으로 쫓겨나지 않도록 세입자의 계속 거주권을 보장하겠습니다.</p>
+    </div>
+
+    <div class="policy">
+      <h3>공공선매제 도입, 전월세 상한제 강화·한시적 동결</h3>
+      <p>집이 매물로 나오면 공공이 먼저 살 수 있는 권리를 갖는 공공선매제를 도입해 투기 수요를 줄이고 공공임대 물량을 자연스럽게 늘리겠습니다. 동시에 전월세 상한제를 강화하고, 필요할 때는 한시적으로 동결해 세입자 부담을 낮추겠습니다.</p>
+    </div>
+  </section>
+
+  <section class="category">
+    <div class="category-head"><span class="num">2</span><span class="name">환경·에너지 — 에너지도 교통도 시민의 것으로</span></div>
+
+    <div class="policy">
+      <h3>공공재생에너지로 체제전환, 1가구 1태양광</h3>
+      <p>에너지 공급을 민간 발전사에만 맡기면 요금 인상과 공급 불안정의 부담은 결국 시민이 지게 됩니다. 서울시가 직접 재생에너지를 생산하고 공급하는 체제로 전환하고, 모든 가구가 태양광 발전에 참여할 수 있도록 1가구 1태양광 보급을 지원하겠습니다.</p>
+    </div>
+
+    <div class="policy">
+      <h3>대중교통 단계적 무상화, 버스완전공영제</h3>
+      <p>이동은 권리입니다. 어린이·청소년·노인·장애인부터 대중교통 무상화를 시작해 단계적으로 전면 무상화하고, 버스는 민간 배차가 아닌 완전공영제로 운영해 노선의 공공성을 높이겠습니다.</p>
+    </div>
+
+    <div class="policy">
+      <h3>공공 차량 100% 전기차 전환, 일회용품 전면 금지</h3>
+      <p>서울시 소유 차량과 대중교통부터 100% 전기차로 바꿔 대기질 개선에 서울시가 먼저 앞장서겠습니다. 일회용품은 전면 금지하고, 다회용품으로 전환하는 데 드는 비용을 서울시가 지원하겠습니다.</p>
+    </div>
+  </section>
+
+  <section class="category">
+    <div class="category-head"><span class="num">3</span><span class="name">교육 — 교육도 공공의 책임입니다</span></div>
+
+    <div class="policy">
+      <h3>초·중·고 전 학생 공공조식 무상 제공</h3>
+      <p>아침을 거른 채 등교하는 학생이 없어야 합니다. 소득 수준과 관계없이 서울의 모든 초·중·고 학생에게 아침밥을 무상으로 제공하고, 지역 공유부엌과 연계해 신선한 먹거리로 채우겠습니다.</p>
+    </div>
+
+    <div class="policy">
+      <h3>학교 안 차별금지 기준 마련</h3>
+      <p>학교는 배움만큼이나 존중을 배우는 곳이어야 합니다. 성별, 장애, 가정환경 등을 이유로 한 차별을 금지하는 명확한 기준을 마련하고, 학생 스스로 문제를 제기할 수 있는 창구를 함께 만들겠습니다.</p>
+    </div>
+  </section>
+
+  <section class="category">
+    <div class="category-head"><span class="num">4</span><span class="name">청년 — 청년의 삶을 국가가 먼저 보장합니다</span></div>
+
+    <div class="policy">
+      <h3>AI 전환기금으로 청년 일자리보장, 서울 일자리보장제</h3>
+      <p>AI·플랫폼 기업이 기술 전환의 이익을 독점하는 사이, 일자리를 잃는 위험은 청년 노동자에게 돌아가서는 안 됩니다. 이런 기업으로부터 지역기여금을 걷어 전환기금을 조성하고, 일자리를 찾는 청년에게 서울시가 직접 일자리를 보장하는 서울 일자리보장제를 운영하겠습니다.</p>
+    </div>
+
+    <div class="policy">
+      <h3>플랫폼노동자 최저보수제, 노동복지카드 지급</h3>
+      <p>배달·돌봄 등 플랫폼에서 일하는 청년에게도 최소한의 보수를 법으로 보장하는 최저보수제를 도입하겠습니다. 건강검진과 휴가, 산재보험을 지원하는 노동복지카드를 지급해 고용형태와 관계없이 기본적인 보호를 받도록 하겠습니다.</p>
+    </div>
+
+    <div class="policy">
+      <h3>임금체불 완전 근절, 포괄임금제 폐지, 주 4일제</h3>
+      <p>일한 만큼 정당하게 받는 것이 원칙입니다. 서울에서 임금체불을 완전히 근절하고, 공짜 야근을 조장하는 포괄임금제를 서울시 공공부문부터 폐지하겠습니다. 서울시 산하기관은 주 4일제를 먼저 시행해 새로운 노동 기준을 만들겠습니다.</p>
+    </div>
+  </section>
+
+  <footer>
+    이 페이지는 <strong>2026 학교연합대토론회</strong> 준비를 위한 교육용 모의 선거공보의 부속 자료입니다.
+  </footer>
+
+</div>
